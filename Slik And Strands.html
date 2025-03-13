@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk And Strands</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+header {
+  background: linear-gradient(90deg, #f5f5dc, #A68563);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease-in-out;
+  display: block;
+
+}
+nav a:hover {
+  background: #A68563;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons a {
+  color: #A68563;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+.social-icons a:hover {
+  color: #f5f5dc;
+  transform: scale(1.2);
+}
+section {
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+h2 {
+  color:#A68563 ;
+  position: relative;
+}
+h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #A68563;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 15px;
+  background: #fff;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+ul li:hover {
+  transform: translateY(-5px);
+  background: #A68563;
+  color: #fff;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+ transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+.gallery img:active {
+  transform: scale(0.9); 
+}
+.booking {
+  background: #fff;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0,0.1);
+   animation: slideIn 0.5s ease-in-out;
+}
+.booking input, .booking button {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.booking button {
+  background: #A68563;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: 0.3s;
+}
+.booking button:hover {
+  background: #A68563;
+  transform: scale(1.05);
+}
+footer {
+  background: #222;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  animation: fadeIn 2s ease-in-out;
+
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+ 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; align-items: center; }
+            nav a { margin: 5px 0; display: block; text-align: center; }
+            .gallery img { width: 100%; }
+        }
+        @media (max-width: 480px) {
+            header { font-size: 24px; padding: 30px 15px; }
+            .booking { width: 100%; padding: 15px; }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Slik And Strands</h1>
+        <p>Your Hair, My Canvas </p>
+    </header>
+    
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Book an Appointment</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.instagram.com/_silk_and_strands?igsh=amt0eHdmNGg3MTlh&utm_source=qr" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+      </a>
+  </nav>
+  
+  <section id="about">
+      <h2>About Us</h2>
+      <p>At Silk & Strands, we deliver high-quality, customized hair solutions, 
+         going beyond client expectations and fostering lasting relationships.dedicated to providing premium,
+          well-maintained hair, customized hair solutions designed to enhance beauty and confidence. With a commitment to excellence, we combine innovative techniques, high-quality products, and expert craftsmanship to deliver stunning results tailored to each client’s unique needs. Our passion goes beyond styling—we prioritize hair health,
+          personalized care, and exceptional customer service to create a luxurious experience.</p>
+  </section>
+  
+  <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+          <li>CUSTOM WIGS</li>
+          <li>HAIR INSTALLATION</li>
+          <li>COLOURING</li>
+          <li>LACE REFILL AND REPAIR</li>
+          <li>HAIR VENTILATION</li>
+          <li>HAIR MAINTENANCE (REVAMPING, STYLING)</li>
+          <li>DECUTICLE</li>
+      </ul>
+  </section>
+  
+  <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+          <img src="IMG_2207.jpg" alt="Styled Wig">
+          <img src="IMG_3538.PNG" alt="Custom Colored Wig">
+          <img src="IMG_3536.PNG" alt="Frontal Installation">
+          <img src="IMG_3539.PNG" alt="Wig Revamping">
+          <img src="IMG_3537.PNG" alt="Wig Styling">
+      </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book an Appointment</h2>
+    <div class="booking">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email"id="email" placeholder="Your Email" required>
+        <input type="text"id="text" placeholder="Preferred Date & Time" required>
+        <button type="submit" onclick="alert('Appointment booked successfully')">Book Now</button>
+    </div>
+</section>
+
+
+  <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: silk.strands@yahoo.com</p>
+      <p>Phone: 07053912949</p>
+      <p>Visit us at: Gwarinpa, Abuja, Nigeria</p>
+  </section>
+  
+  <footer>
+      <p>&copy; 2025 Silk And Strands. All Rights Reserved.</p>
+      <div class="social-icons">
+          <a href="https://www.instagram.com/_silk_and_strands?igsh=amt0eHdmNGg3MTlh&utm_source=qr" target="_blank">
+              <i class="fab fa-instagram"></i>
+          </a>
+      </div>
+  </footer>
+
+
+<!-- Place script here, after the content -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        let formData = new FormData(this);
+
+        fetch('book_appointment.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('formResponse').innerText = data;
+        })
+        .catch(error => {
+            document.getElementById('formResponse').innerText = "Error: Unable to send booking request.";
+        });
+    });
+});
+</script>
+</body>
+</html>
